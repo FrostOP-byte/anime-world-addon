@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: anime-world-addon
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /manifest.json
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: AUTHORIZED_STREAMS_JSON
+        value: "[]"

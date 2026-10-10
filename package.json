@@ -1,0 +1,17 @@
+
+{
+  "name": "anime-world-addon",
+  "version": "1.0.0",
+  "description": "Anime catalog for Stremio with authorized sources only",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "stremio-addon-sdk": "1.6.10"
+  }
+}
